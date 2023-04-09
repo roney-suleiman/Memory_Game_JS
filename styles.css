@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1d2;
+}
+
+.head {
+  background-color: rgb(219, 243, 86);
+  border: 2px solid #a6a6a6;
+  max-width: 480px;
+  margin: auto;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-family: "Orbitron";
+  color: #333;
+}
+
+.scour {
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1rem;
+  margin: auto;
+  padding: 10px;
+}
+.cell div {
+  height: 130px;
+  border-radius: 4px;
+}
+
+.cell {
+  position: relative;
+  cursor: pointer;
+}
+
+img {
+  height: 100px;
+}
+
+.front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #a6a6a6;
+  background-color: #f1f1d2;
+  transform: rotateY(90deg);
+}
+
+.back {
+  background-color: #333;
+}
+
+.flip {
+  transform: rotateY(0deg);
+}
+
+.found {
+  transform: rotateY(0deg);
+}
+
+.show {
+  transform: rotateY(0deg);
+}
+.control {
+  padding: 10px;
+  background-color: rgb(16, 179, 179);
+  margin-top: 0px;
+  border-radius: 10px;
+}
+#btnStart {
+  height: 20px;
+  width: 90px;
+  background-color: rgb(186, 235, 10);
+  border-radius: 5px;
+  cursor: pointer;
+}
+select {
+  height: 20px;
+  width: 90px;
+  background-color: rgb(186, 235, 10);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+.scour {
+  margin: 10px;
+  background-color: rgb(240, 176, 151);
+  padding: 10px;
+  border-radius: 10px;
+}
+.best_scour {
+  background-color: rgb(240, 176, 151);
+  padding: 3px;
+  border-radius: 5px;
+}
+#score_timer {
+  font-weight: bold;
+}
+#score {
+  font-weight: bold;
+}
+#best_score_timer {
+  font-weight: bold;
+}
+#topScore {
+  font-weight: bold;
+}
